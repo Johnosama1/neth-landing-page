@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N∑TH — نبني المستقبل الرقمي</title>
+  <meta name="description" content="هندسة أنظمة مستقلة وبوتات عالية الأداء وبنية تحتية قابلة للتوسع." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════ NAV ══════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">N</div>
+      <span class="logo-text-en">N∑TH</span>
+      <div class="logo-divider"></div>
+      <span class="logo-text-ar arabic">نظم</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services">Capabilities</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#projects">Systems</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+
+    <button class="nav-cta">Initialize</button>
+    <button class="nav-mobile-btn" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════ HERO ══════════════════════════════════ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      SYSTEMS ONLINE // v2.4.0
+    </div>
+
+    <h1 class="hero-headline arabic">
+      نبني <span class="blue-word">المستقبل</span> الرقمي
+    </h1>
+
+    <p class="hero-sub">
+      We engineer autonomous systems, high-frequency bots, and scalable infrastructure
+      for businesses that refuse to wait. Precision. Speed. Power.
+    </p>
+
+    <div class="hero-btns">
+      <button class="btn-primary">
+        ابدأ الآن
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        اعرف المزيد
+      </button>
+    </div>
+  </div>
+
+  <button class="scroll-indicator" id="scroll-down">
+    <span>Scroll Sequence</span>
+    <svg class="scroll-arrow" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+  </button>
+</section>
+
+<!-- ══════════════════════════════════ SERVICES ══════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div>
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span>Core Capabilities</span>
+        </div>
+        <h2 class="section-title-ar arabic">حلول هندسية متقدمة</h2>
+      </div>
+      <p class="services-desc section-desc">
+        We deploy surgical precision in every line of code. Our infrastructure handles millions of operations with zero downtime. Pure performance, no compromises.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal stagger-1">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 10 4a2 2 0 0 1 2-2"/>
+            <circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/>
+          </svg>
+          <span class="service-metric">99.99% Uptime</span>
+        </div>
+        <h3 class="service-title">Autonomous Bots</h3>
+        <p class="service-desc">High-frequency algorithms, automated support agents, and task runners operating 24/7 with zero human intervention.</p>
+      </div>
+
+      <div class="service-card reveal stagger-2">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+          </svg>
+          <span class="service-metric">&lt;10ms Latency</span>
+        </div>
+        <h3 class="service-title">Custom Infrastructure</h3>
+        <p class="service-desc">Bespoke backend systems designed for extreme scale and microsecond latency. Distributed, resilient, and fault-tolerant.</p>
+      </div>
+
+      <div class="service-card reveal stagger-3">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="4" y="4" width="16" height="16" rx="2"/>
+            <rect x="9" y="9" width="6" height="6"/>
+            <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+            <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+            <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+            <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+          </svg>
+          <span class="service-metric">GPT-4 / Claude 3</span>
+        </div>
+        <h3 class="service-title">AI Integration</h3>
+        <p class="service-desc">Embedding state-of-the-art language models and computer vision directly into your workflows for intelligent automation.</p>
+      </div>
+
+      <div class="service-card reveal stagger-4">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span class="service-metric">SOC2 Compliant</span>
+        </div>
+        <h3 class="service-title">Security &amp; Auditing</h3>
+        <p class="service-desc">Enterprise-grade security protocols, end-to-end encryption, and continuous vulnerability scanning for mission-critical systems.</p>
+      </div>
+
+      <div class="service-card reveal stagger-5">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+          <span class="service-metric">React / Node.js</span>
+        </div>
+        <h3 class="service-title">Full-Stack Apps</h3>
+        <p class="service-desc">Beautiful, high-performance web and mobile applications that serve as the command center for your automated infrastructure.</p>
+      </div>
+
+      <div class="service-card reveal stagger-6">
+        <div class="service-card-top">
+          <svg class="service-icon" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <span class="service-metric">3x Faster</span>
+        </div>
+        <h3 class="service-title">Performance Tuning</h3>
+        <p class="service-desc">Surgical optimization of existing codebases. We find bottlenecks and eliminate them, dramatically reducing server costs.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ STATS ═════════════════════════════════ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal stagger-1">
+        <div class="stat-number">
+          <span data-count="99.9" data-dec="1"></span>
+          <span class="stat-suffix">%</span>
+        </div>
+        <div class="stat-label">Uptime SLA</div>
+      </div>
+      <div class="stat-item reveal stagger-2">
+        <div class="stat-number">
+          <span data-count="250"></span>
+          <span class="stat-suffix">M+</span>
+        </div>
+        <div class="stat-label">API Requests / Day</div>
+      </div>
+      <div class="stat-item reveal stagger-3">
+        <div class="stat-number">
+          <span data-count="12"></span>
+          <span class="stat-suffix">ms</span>
+        </div>
+        <div class="stat-label">Avg Execution Time</div>
+      </div>
+      <div class="stat-item reveal stagger-4">
+        <div class="stat-number">
+          <span data-count="45"></span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <div class="stat-label">Enterprise Deployments</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ PROCESS ═══════════════════════════════ -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="section-label" style="justify-content:center">
+        <div class="section-label-line"></div>
+        <span>Methodology</span>
+        <div class="section-label-line"></div>
+      </div>
+      <h2 class="section-title-ar arabic" style="text-align:center;margin-top:1rem">آلية العمل</h2>
+      <p>A systematic approach to building robust infrastructure. No guesswork, just engineering.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-line"></div>
+
+      <div class="process-step reveal stagger-1">
+        <div class="step-number">01</div>
+        <h3 class="step-title">Architecture</h3>
+        <p class="step-desc">System design and technical specifications. We map out the data flow and infrastructure requirements before writing a single line.</p>
+      </div>
+
+      <div class="process-step reveal stagger-2">
+        <div class="step-number">02</div>
+        <h3 class="step-title">Development</h3>
+        <p class="step-desc">Agile sprints with pure focus. We build the core engine, implementing bots and APIs with rigorous test coverage.</p>
+      </div>
+
+      <div class="process-step reveal stagger-3">
+        <div class="step-number">03</div>
+        <h3 class="step-title">Stress Test</h3>
+        <p class="step-desc">Simulating heavy loads and edge cases. We attack our own systems to ensure they won't break under pressure.</p>
+      </div>
+
+      <div class="process-step reveal stagger-4">
+        <div class="step-number">04</div>
+        <h3 class="step-title">Deployment</h3>
+        <p class="step-desc">Zero-downtime rollout. We deploy the systems to production and set up continuous monitoring and logging.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ PROJECTS ══════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div>
+        <div class="section-label">
+          <div class="section-label-line"></div>
+          <span>Active Systems</span>
+        </div>
+        <h2 class="section-title-ar arabic">مشاريع رائدة</h2>
+      </div>
+      <button class="btn-outline">View All Systems</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal stagger-1">
+        <div class="project-terminal"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">FINTECH</span>
+            <span class="project-status">
+              <span class="status-dot"></span>
+              Operational
+            </span>
+          </div>
+          <h3 class="project-name">TradeBot Alpha</h3>
+          <p class="project-desc">High-frequency cryptocurrency arbitrage bot executing trades in under 5ms.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Rust</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Redis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal stagger-2">
+        <div class="project-terminal"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">ENTERPRISE</span>
+            <span class="project-status">
+              <span class="status-dot"></span>
+              Deployed
+            </span>
+          </div>
+          <h3 class="project-name">Nexus CRM</h3>
+          <p class="project-desc">Custom CRM system with automated email sequencing and AI-driven lead scoring.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">GraphQL</span>
+            <span class="tech-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ PRICING ═══════════════════════════════ -->
+<section id="pricing">
+  <div class="container">
+    <div class="pricing-header reveal">
+      <div class="section-label" style="justify-content:center">
+        <div class="section-label-line"></div>
+        <span>Engagement Models</span>
+        <div class="section-label-line"></div>
+      </div>
+      <h2 class="section-title-ar arabic" style="text-align:center;margin-top:1rem">نطاق العمل</h2>
+      <p>Transparent tiers for serious operations.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal stagger-1">
+        <div class="pricing-name">Startup</div>
+        <div class="pricing-price">
+          <span class="price-amount">$2k</span>
+          <span class="price-period">/ project</span>
+        </div>
+        <p class="pricing-desc">Essential automation and custom tools for growing teams.</p>
+        <ul class="pricing-features">
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            1 Custom Bot
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Basic API Integration
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Email Support
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            99% Uptime
+          </li>
+        </ul>
+        <button class="pricing-btn outline">Initialize Sequence</button>
+      </div>
+
+      <div class="pricing-card popular reveal stagger-2">
+        <div class="popular-badge">Recommended</div>
+        <div class="pricing-name">Enterprise</div>
+        <div class="pricing-price">
+          <span class="price-amount">$10k</span>
+          <span class="price-period">/ month</span>
+        </div>
+        <p class="pricing-desc">Dedicated infrastructure and priority scaling for serious operations.</p>
+        <ul class="pricing-features">
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Unlimited Bots
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Advanced AI Models
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            24/7 Phone Support
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Custom SLA
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Dedicated Engineer
+          </li>
+        </ul>
+        <button class="pricing-btn solid">Initialize Sequence</button>
+      </div>
+
+      <div class="pricing-card reveal stagger-3">
+        <div class="pricing-name">Nexus</div>
+        <div class="pricing-price">
+          <span class="price-amount">Custom</span>
+          <span class="price-period">terms</span>
+        </div>
+        <p class="pricing-desc">Total digital transformation and bespoke operating system.</p>
+        <ul class="pricing-features">
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            On-premise Deployment
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Source Code Access
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Board-level Strategy
+          </li>
+          <li>
+            <svg class="check-icon" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Zero-latency Optimization
+          </li>
+        </ul>
+        <button class="pricing-btn outline">Initialize Sequence</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ CTA ════════════════════════════════════ -->
+<section id="cta">
+  <div class="container">
+    <div class="reveal">
+      <svg class="cta-icon" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/>
+      </svg>
+      <h2 class="cta-title arabic">جاهز للسيطرة؟</h2>
+      <p class="cta-sub">
+        Stop competing on their terms. Build the autonomous systems that make your business untouchable.
+        The future belongs to those who automate it.
+      </p>
+      <button class="btn-white">Schedule Technical Review</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ FOOTER ════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand-logo">
+          <div class="footer-brand-icon">N</div>
+          <span class="footer-brand-name">N∑TH</span>
+        </div>
+        <p class="footer-brand-desc">
+          Engineering firm specializing in autonomous software systems, high-frequency execution, and enterprise automation infrastructure.
+        </p>
+        <div class="status-badge">
+          <span class="dot"></span>
+          ALL SYSTEMS NOMINAL
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Sectors</h5>
+        <ul>
+          <li><a href="#">FinTech &amp; Trading</a></li>
+          <li><a href="#">Enterprise CRM</a></li>
+          <li><a href="#">Data Pipelines</a></li>
+          <li><a href="#">AI Agents</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:init@neth.systems">init@neth.systems</a></li>
+          <li><a href="#">GitHub Directory</a></li>
+          <li><a href="#">Technical Blog</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; <span id="year"></span> N∑TH AUTOMATION SYSTEMS. ALL RIGHTS RESERVED.</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
